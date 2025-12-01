@@ -21,4 +21,4 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # Step 3: Run Gunicorn
-CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "CourseService.wsgi:application", "--bind", "0.0.0.0:8000"]
